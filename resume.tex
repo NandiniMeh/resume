@@ -1,0 +1,224 @@
+%-------------------------
+% Resume in Latex
+% Author : Nandini Mehrotra
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+\usepackage{courier}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand*{\myfont}{\fontfamily{<courier>}\selectfont}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+\small \myfont nandini@resume:~\$ whoami
+\end{center}
+\begin{center}
+    \vspace{-0.2cm}
+    \textbf{\Huge \scshape Nandini Mehrotra} \\ \vspace{1pt}
+    \small 226-507-4163 $|$ \href{mailto:n3mehrot@uwaterloo.ca}{\underline{n3mehrot@uwaterloo.ca}} $|$ 
+    \href{https://www.linkedin.com/in/nandini-mehrotra-b179171b5/}{\underline{linkedin.com/in/nandinimehrotra}} $|$
+    \href{https://github.com/NandiniMeh}{\underline{github.com/NandiniMeh}}
+\end{center}
+\vspace*{-\baselineskip}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: HTML/CSS, JavaScript, C/C++, R, Racket, Bash, Shell} \\
+     \textbf{Frameworks \& Technologies}{: React, WordPress, Bootstrap, Figma} \\
+     \textbf{Additional}{: Remote work with C++ on Linux OS (Ubuntu) using WSL, Bash Commands} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Content Writer}{October 2020 - December 2020}
+      {Platform Universal}{Remote: Dubai, UAE}
+      \resumeItemListStart
+        \resumeItem{Collaborated with 5-person team to deliver blog content (written and visual) for launch of website aimed at mental health awareness among university students.}
+        \resumeItem{Coordinated with marketing and design teams to illustrate written content.}
+        \resumeItem{Conducted keyword research and used SEO guidelines to optimize content.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {President Editorial Board}{April 2019 - April 2020}
+      {Delhi Private School Sharjah}{Sharjah, UAE}
+      \resumeItemListStart
+        \resumeItem{Applied understanding of public opinion, social media, and traditional media use to create engaging content.}
+        \resumeItem{Published and maintained collaborative ‘student blog’ network for 5700+ students to read and submit original written pieces.}
+        \resumeItem{Cultivated knowledge of HTML/CSS through this project.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Student Researcher and Product Designer}{April 2018 - February 2019}
+      {Global Research and Immersion Programme (NUS and NTU Universities)}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Led 8-month research and design thinking period on causes of traffic with 4-person team.}
+        \resumeItem{Built virtual prototype of AI-driven dividers that divide road according to density of traffic as solution to identified problem using Figma.}
+        \resumeItem{Pitched idea to NUS and NTU university professors in Singapore and Road and Transport Authority in Dubai, received recognition for innovative thinking and creative pitch deck.}
+        \resumeItem{Complied a 65-page pitch deck and 2 progress reports on research, assessing progress in line with design thinking objectives.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects and Hackathons}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Design Portfolio} $|$ \emph{HTML5/CSS3, Bootstrap}}{May 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developing second iteration of website showcasing design approach and prototypes for projects.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SaveTwitter!} $|$ \emph{HTML5/CSS3, JavaScript}}{October 2021}
+          \resumeItemListStart
+            \resumeItem{Built a recreated version of the famous Dinosaur Game from Google Chrome Browser Offline}
+            \resumeItem{Simple and easy-to-use GUI provided for better gameplay}
+            \resumeItem{Inspired by recent social media outage}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------VOLUNTEERING-----------
+\section{Volunteering}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf {Orientation Director and Leader, University of Waterloo}}{Waterloo, ON, Canada}
+      \resumeItemListStart
+            \resumeItem{Acted as an upper-year mentor to 60 incoming first year students.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf {Brand Ambassador, Protect Your Mom Awareness Campaign}}{Dubai, UAE}
+      \resumeItemListStart
+            \resumeItem{Led team of 15 coordinators in conducting campaigns about breast cancer for an audience of over 200 students.}
+          \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, ON, Canada}
+      {Bachelor of Science in Computer Science}{Expected Graduation: 2025}
+      \resumeItemListStart
+            \resumeItem{\textbf {Awards}: President’s Scholarship of Distinction}
+          \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

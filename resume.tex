@@ -4,7 +4,7 @@
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
-
+ 
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -19,6 +19,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
+\usepackage{setspace}
 
 
 %----------FONT OPTIONS----------
@@ -59,6 +60,9 @@
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
+
+%Line spacing
+\renewcommand{\baselinestretch}{1.0}
 
 %-------------------------
 % Custom commands
@@ -103,12 +107,12 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-\small \myfont nandini@resume:~\$ whoami
+\small \myfont nandini@resume:\~\$ whoami
+\vspace{0.4 \baselineskip}
 \end{center}
 \begin{center}
     \vspace{-0.2cm}
@@ -175,7 +179,7 @@
   \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------
+%-----------PROJECTS AND HACKATHONS-----------
 \section{Projects and Hackathons}
     \resumeSubHeadingListStart
       \resumeProjectHeading
@@ -190,18 +194,30 @@
             \resumeItem{Simple and easy-to-use GUI provided for better gameplay}
             \resumeItem{Inspired by recent social media outage}
           \resumeItemListEnd
+     \resumeProjectHeading
+          {\textbf{CoviTrack}-TOHacks Submission $|$ \emph{HTML5/CSS3, Figma, echoAR}}{May 2021}
+          \resumeItemListStart
+            \resumeItem{Ideated mobile and desktop platform as 2-person team for an all-in-one stop for healthy living during the pandemic}
+            \resumeItem{Implemented vaccine appointment booking and daily health-check features.}
+          \resumeItemListEnd
+     \resumeProjectHeading
+          {\textbf{TheHub}-TILE Designathon Submission $|$ \emph{Figma}}{March 2021}
+          \resumeItemListStart
+            \resumeItem{Ideated interactive mobile platform for isolated post-secondary students to enhance meaningful connections.}
+            \resumeItem{Designed HiFis, LoFis, Branding and Prototype.}
+          \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 %-----------VOLUNTEERING-----------
 \section{Volunteering}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\textbf {Orientation Director and Leader, University of Waterloo}}{Waterloo, ON, Canada}
+      {\textbf {Orientation Director and Leader, University of Waterloo}}{May 2021 - September 2021}
       \resumeItemListStart
             \resumeItem{Acted as an upper-year mentor to 60 incoming first year students.}
           \resumeItemListEnd
     \resumeProjectHeading
-      {\textbf {Brand Ambassador, Protect Your Mom Awareness Campaign}}{Dubai, UAE}
+      {\textbf {Brand Ambassador, Protect Your Mom Awareness Campaign}}{September 2019 - Present}
       \resumeItemListStart
             \resumeItem{Led team of 15 coordinators in conducting campaigns about breast cancer for an audience of over 200 students.}
           \resumeItemListEnd
@@ -218,7 +234,5 @@
             \resumeItem{\textbf {Awards}: President’s Scholarship of Distinction}
           \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-
 %-------------------------------------------
 \end{document}

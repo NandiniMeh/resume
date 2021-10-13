@@ -21,6 +21,8 @@
 \input{glyphtounicode}
 \usepackage{setspace}
 \usepackage{fontawesome}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xcolor}
 
 
 %----------FONT OPTIONS----------
@@ -104,8 +106,7 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-\newcommand*{\myfont}{\fontfamily{<courier>}\selectfont}
-
+\definecolor{light-gray}{gray}{0.95}
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -113,15 +114,11 @@
 
 %----------HEADING----------
 \begin{center}
-\small \myfont nandini@resume:\~\$ whoami
-\vspace{0.4 \baselineskip}
-\end{center}
-\begin{center}
     \vspace{-0.2cm}
-    \textbf{\Huge \scshape Nandini Mehrotra} \\ \vspace{1pt}
-    \small 226-507-4163 $|$ \href{mailto:n3mehrot@uwaterloo.ca}{\underline{n3mehrot@uwaterloo.ca}} $|$ 
-    \href{https://www.linkedin.com/in/nandini-mehrotra-b179171b5/}{\underline{linkedin.com/in/nandinimehrotra}} $|$
-    \href{https://github.com/NandiniMeh}{\underline{github.com/NandiniMeh}}
+    \textbf{\Huge \scshape Nandini Mehrotra} \\ \vspace{5pt}
+    \small {\faPhone} 226-507-4163 \hspace{3pt}   \href{mailto:n3mehrot@uwaterloo.ca}{{\faEnvelope} n3mehrot@uwaterloo.ca} \hspace{3pt}  
+    \href{https://www.linkedin.com/in/nandini-mehrotra-b179171b5/}{{\faLinkedinSquare} linkedin.com/in/nandinimehrotra} \hspace{3pt}
+    \href{https://github.com/NandiniMeh}{{\faGithub} github.com/NandiniMeh}
 \end{center}
 \vspace*{-\baselineskip}
 
@@ -139,7 +136,6 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-
     \resumeSubheading
       {Content Writer}{October 2020 - December 2020}
       {Platform Universal}{Remote: Dubai, UAE}
@@ -184,17 +180,16 @@
 %-----------PROJECTS AND HACKATHONS-----------
 \section{Projects and Hackathons}
     \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Design Portfolio {\href{https://github.com/NandiniMeh/design_portfolio_iteration01}{\faGithub}}} $|$ \emph{HTML5/CSS3, Bootstrap} }{May 2021 -- Present}
-          \resumeItemListStart
-            \resumeItem{Developing second iteration of website showcasing design approach and prototypes for projects.}
-          \resumeItemListEnd
-      \resumeProjectHeading
+     \resumeProjectHeading
           {\textbf{SaveTwitter! {\href{https://github.com/NandiniMeh/save-twitter-game}{\faGithub}}} $|$ \emph{HTML5/CSS3, JavaScript}}{October 2021}
           \resumeItemListStart
             \resumeItem{Built a recreated version of the famous Dinosaur Game from Google Chrome Browser Offline}
             \resumeItem{Simple and easy-to-use GUI provided for better gameplay}
-            \resumeItem{Inspired by recent social media outage}
+          \resumeItemListEnd
+     \resumeProjectHeading
+          {\textbf{Design Portfolio {\href{https://github.com/NandiniMeh/design_portfolio_iteration01}{\faGithub}}} $|$ \emph{HTML5/CSS3, Bootstrap} }{May 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developing second iteration of personal website showcasing design approach and prototypes for projects.}
           \resumeItemListEnd
      \resumeProjectHeading
           {\textbf{CoviTrack}-TOHacks Submission {\href{https://github.com/NandiniMeh/CoviTrack}{\faGithub}} $|$ \emph{HTML5/CSS3, Figma, echoAR}}{May 2021}
